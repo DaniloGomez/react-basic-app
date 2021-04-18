@@ -1,0 +1,7 @@
+.product-category-container{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 300px;
+    border:1px solid turquoise;
+    margin-top: 10px;
+}
