@@ -4,4 +4,10 @@
     min-height: 300px;
     border:1px solid turquoise;
     margin-top: 10px;
+    padding: 5px;
 }
+
+.redDv{
+    color: red;
+}
+

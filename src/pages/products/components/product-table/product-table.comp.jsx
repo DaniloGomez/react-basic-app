@@ -1,34 +1,26 @@
 import React from 'react';
-import ProductCategory from './category/product-category.comp';
 import './product-table.style.css';
 import {TableCell, TableBody} from '@material-ui/core'
+import '../ProductCategoryRow/product-category.comp';
+import ProductCategory from '../ProductCategoryRow/product-category.comp';
+import ProductRow from '../Product-Row/product-row.comp';
 
 const ProductTable = () => {
     return (
         <div className="product-table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Price
-                        </th>
-                    </tr>
-                </thead>
-            <TableBody>
-                {Products.map(celda=>(
-                    <tr>
-                            <TableCell>{celda.name}</TableCell>
-                            <TableCell>{celda.price}</TableCell>
-                    </tr>
-                    ))}
-            </TableBody>
-            </table>
+        <table>
+            <th><b>Name</b></th>
+            <th><b>Price</b></th>
+            
+        </table>
+        <ProductCategory/>
         </div>
+
+        
+        
     );
 }
+
 
 const Products = [
     {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
